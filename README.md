@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Click here to view solution](https://www.frontendmentor.io/solutions/responsive-advice-app-with-bootstrap-css-and-javascript-8rJOiq7V1T)
+- Live Site URL: [Click here to view live site](https://alloyc.github.io/Advice-generator-app/)
 
 ## My process
 
