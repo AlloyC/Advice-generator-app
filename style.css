@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap");
+
+:root {
+  /* Primary */
+  --Light-Cyan: hsl(193, 38%, 86%);
+  --Neon-Green: hsl(150, 100%, 66%);
+
+  /* Neutral */
+  --Grayish-Blue: hsl(217, 19%, 38%);
+  --Dark-Grayish-Blue: hsl(217, 19%, 24%);
+  --Dark-Blue: hsl(218, 23%, 16%);
+
+  --Font-size-quote: 28px;
+
+  --font-family: "Manrope", sans-serif;
+  --Weights: 800;
+}
+
+* {
+  box-sizing: border-box;
+  overflow-x: hidden;
+  font-family: var(--font-family);
+}
+
+.bg-dark-grayish-blue {
+  background-color: var(--Dark-Grayish-Blue);
+}
+
+.bg-dark-blue {
+  background-color: var(--Dark-Blue);
+}
+
+.bg-neon-green {
+  background-color: var(--Neon-Green);
+}
+
+.cl-light-cyan {
+  color: var(--Light-Cyan);
+}
+
+.cl-neon-green {
+  color: var(--Neon-Green);
+}
+
+.fs-200 {
+  font-size: var(--Font-size-quote);
+}
+
+.container-fixed {
+  max-width: 22rem !important;
+  margin: auto 2rem;
+  border-radius: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 50px 30px 70px;
+}
+
+.container-fixed::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  left: 0px;
+  height: 1.5rem;
+  bottom: 1.5rem;
+  border-radius: 10px;
+  background-color: var(--Dark-Grayish-Blue);
+  z-index: 10;
+}
+
+.container-fixed::after {
+  position: absolute;
+  content: "";
+  width: calc(100% + 40px);
+  left: -20px;
+  right: -20px;
+  height: 2rem;
+  bottom: 0;
+  z-index: 5;
+  background-color: var(--Dark-Blue);
+  box-shadow: 1px 0 1px var(--Dark-Blue);
+}
+
+i {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  background-color: var(--dark-Grayish-Blue);
+  padding: 0 10px;
+  z-index: 10;
+}
+
+.title {
+  padding: 20px;
+  font-size: 1.1rem;
+  letter-spacing: 4px;
+}
+
+#id {
+  padding-left: 10px;
+}
+
+.icon {
+  position: relative;
+  width: 100%;
+}
+
+.btn-rd {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%);
+  padding: 1.5rem;
+  border: none;
+  border-radius: 50%;
+  z-index: 1000;
+  outline: none;
+}
+
+.btn-rd:hover,
+.btn-rd:focus,
+.btn-rd:focus-visible {
+  border: 2px solid var(--Light-Cyan);
+}
+
+.btn-rd img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 1.1rem;
+  height: 1.1rem;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: var(--Light-Cyan) !important;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
